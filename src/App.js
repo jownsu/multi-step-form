@@ -1,6 +1,10 @@
+import MultiStepForm from "./views/MultiStepForm/multi_step_form";
+
 function App() {
     return (
-        <h1>Multi step form</h1>
+        <div className="container">
+            <MultiStepForm />
+        </div>
     );
 }
 

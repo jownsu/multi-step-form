@@ -1,0 +1,14 @@
+.nav {
+    flex: 1;
+    max-width: 35rem;
+}
+
+.content {
+    flex: 2;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    height: 100%;
+}

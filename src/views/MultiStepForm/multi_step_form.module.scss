@@ -1,0 +1,11 @@
+@import "../../assets/sass/variables";
+
+.container {
+    background: $color-white;
+    border-radius: 1rem;
+    box-shadow: 0px 2px 8px rgba(#000, .3);
+    height: 75rem;
+    max-width: $bp-large;
+    padding: 2rem;
+    width: 100%;
+}
