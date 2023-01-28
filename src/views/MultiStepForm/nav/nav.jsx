@@ -9,6 +9,7 @@ function Nav() {
     return (
         <div className={styles.container}>
             <button 
+                type="button"
                 className={`${styles.step} ${step === 1 ? styles.active : ""}`}
                 onClick={() => setStep(1)}
             >
@@ -19,6 +20,7 @@ function Nav() {
                 </div>
             </button>
             <button 
+                type="button"
                 className={`${styles.step} ${step === 2 ? styles.active : ""}`}
                 onClick={() => setStep(2)}
             >
@@ -29,8 +31,9 @@ function Nav() {
                 </div>
             </button>
             <button 
+                type="button"
                 className={`${styles.step} ${step === 3 ? styles.active : ""}`}
-                onClick={() => setStep(3)}
+                onClick={(e) => setStep(3)}
             >
                 <span className={styles.step_num}>3</span>
                 <div className={styles.step_desc_container}>
@@ -39,6 +42,7 @@ function Nav() {
                 </div>
             </button>
             <button 
+                type="button"
                 className={`${styles.step} ${step === 4 ? styles.active : ""}`}
                 onClick={() => setStep(4)}
             >

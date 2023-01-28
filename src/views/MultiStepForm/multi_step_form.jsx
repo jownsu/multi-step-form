@@ -5,6 +5,11 @@ import Content from "./content/content";
 import styles from "./multi_step_form.module.scss";
 
 function MultiStepForm() {
+
+    function onFormSubmit(e){
+        e.preventDefault();
+    }
+
     return (
         <MultiFormProvider>
             <div className={styles.container}>

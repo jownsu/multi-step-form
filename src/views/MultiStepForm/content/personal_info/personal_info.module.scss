@@ -1,1 +1,61 @@
 @import "../../../../assets/sass/variables";
+
+.personal_info {
+    height: inherit;
+    padding: 4rem;
+    position: relative;
+
+    &_desc {
+        color: $color-cool-gray;
+        margin-bottom: 4rem;
+    }
+
+    h3 {
+        color: $color-primary;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    &_group {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &:not(:last-of-type) {
+            margin-bottom: 2rem;
+        }
+
+        label {
+            color: $color-primary;
+            font-weight: 500;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input {
+            border-radius: 1rem;
+            outline: none;
+            border: 2px solid $color-cool-gray;
+            padding: 1.5rem 1rem;
+
+            &:active, 
+            &:focus {
+                border: 2px solid $color-primary;
+            }
+        }
+    }
+
+    &_error {
+        color: $color-red;
+    }
+
+    &_input_error {
+        border: 2px solid $color-red !important;
+    }
+
+    &_next {
+        position: absolute;
+        right: 4rem;
+        bottom: 4rem;
+    }
+}

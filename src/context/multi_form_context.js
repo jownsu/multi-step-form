@@ -11,8 +11,7 @@ const MultiFormProvider = ({children}) => {
             value={{
                     step,
                     setStep
-                }
-            }
+                }}
         >
             {children}
         </MultiFormContext.Provider>

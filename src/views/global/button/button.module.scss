@@ -1,0 +1,17 @@
+@import "../../../assets/sass/variables";
+
+.btn_primary {
+    background: $color-primary;
+    border-radius: .6rem;
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+    padding: 1.3rem 2.5rem;
+
+    &:hover {
+        opacity: .7;
+    }
+}

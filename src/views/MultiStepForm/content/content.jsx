@@ -1,4 +1,4 @@
-import { useState, useContext } from "react";
+import { useContext } from "react";
 import { MultiFormContext } from "../../../context/multi_form_context";
 import PersonalInfo from "./personal_info/personal_info";
 import Plan from "./plan/plan";
@@ -18,9 +18,9 @@ function Content() {
     const { step } = useContext(MultiFormContext);
 
     return (
-        <div className={styles.container}>
+        <form className={styles.container}>
             {renderContent[step]}
-        </div>
+        </form>
     )
 }
 

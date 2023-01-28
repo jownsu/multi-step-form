@@ -18,9 +18,9 @@ function Content({children}){
 
 function Container({children}){
     return (
-        <div className={styles.container}>
+        <form className={styles.container}>
             {children}
-        </div>
+        </form>
     )
 }
 
