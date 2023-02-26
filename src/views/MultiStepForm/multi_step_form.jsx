@@ -3,7 +3,7 @@ import Formlayout from "../global/form_layout";
 import Nav from "./nav/nav";
 import Content from "./content/content";
 import styles from "./multi_step_form.module.scss";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function MultiStepForm() {
 
     function onFormSubmit(e){
@@ -12,7 +12,7 @@ function MultiStepForm() {
 
     return (
         <MultiFormProvider>
-            <div className={styles.container}>
+            <div className={styles._container}>
                 <Formlayout>
                     <Nav />
                     <Content />

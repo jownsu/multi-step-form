@@ -1,0 +1,20 @@
+@import "../../../../../assets/sass/variables";
+
+.plant_time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F9FE;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    gap: 2.5rem;
+
+    p{
+        margin-bottom: 0;
+        color: $color-cool-gray;
+        font-weight: 700;
+    }
+    p.active{
+        color: $color-primary;
+    }
+}

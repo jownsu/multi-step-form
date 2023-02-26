@@ -18,7 +18,7 @@ function Content() {
     const { step } = useContext(MultiFormContext);
 
     return (
-        <form className={styles.container}>
+        <form className={styles._container}>
             {renderContent[step]}
         </form>
     )

@@ -7,7 +7,7 @@ function Nav() {
     const { step, setStep } = useContext(MultiFormContext); 
 
     return (
-        <div className={styles.container}>
+        <div className={styles._container}>
             <button 
                 type="button"
                 className={`${styles.step} ${step === 1 ? styles.active : ""}`}

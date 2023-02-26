@@ -27,15 +27,15 @@
 
         label {
             color: $color-primary;
-            font-weight: 500;
             display: flex;
+            font-weight: 500;
             justify-content: space-between;
         }
 
         input {
             border-radius: 1rem;
-            outline: none;
             border: 2px solid $color-cool-gray;
+            outline: none;
             padding: 1.5rem 1rem;
 
             &:active, 
@@ -54,8 +54,8 @@
     }
 
     &_next {
+        bottom: 4rem;
         position: absolute;
         right: 4rem;
-        bottom: 4rem;
     }
 }
