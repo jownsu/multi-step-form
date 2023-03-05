@@ -1,21 +1,19 @@
 @import "../../../../assets/sass/variables";
 
 .plan{
-    display: flex;
-    flex-direction: column;
     height: inherit;
-    padding: 4rem;
     position: relative;
 
-    &_desc{
+    > p {
         color: $color-cool-gray;
-        margin-bottom: 4rem;
+        margin-bottom: 3.5rem;
     }
 
-    h3{
+    h3 {
         color: $color-primary;
         font-size: 3rem;
-        margin-bottom: 1rem;
+        font-weight: 600;
+        margin-bottom: .7rem;
     }
 
     .plans_container{
@@ -31,8 +29,10 @@
     }
 
     &_footer{
+        bottom: 0;
         display: flex;
         justify-content: space-between;
-        margin-top: auto;
+        position: absolute;
+        width: 100%;
     }
 }

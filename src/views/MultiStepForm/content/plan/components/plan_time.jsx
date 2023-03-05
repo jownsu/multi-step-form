@@ -1,19 +1,17 @@
-import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 import styles from "./plan_time.module.scss";
 
-function PlanTime() {
-    const [isYearly, setIsYearly] = useState(false);
+function PlanTime({isYearly = false, onSwitchClick = () => {}}) {
 
     return (
         <div className={styles.plant_time}>
             <p className={`${ !isYearly ? styles.active : "" }`}>Monthly</p>
             <Form.Check 
                 type="switch"
-                id="custom-switch"
+                id="time_switch"
                 className={styles.switch}
                 checked={isYearly}
-                onClick={() => setIsYearly(prevState => !prevState)}
+                onChange={onSwitchClick}
             />
             <p className={`${ isYearly ? styles.active : "" }`}>Yearly</p>
         </div>

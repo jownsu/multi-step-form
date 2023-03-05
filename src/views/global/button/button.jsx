@@ -13,9 +13,13 @@ export const PrimaryButton = ({text = "", onClick = () => {}, className}) => {
     )
 }
 
-export const SecondaryButton = ({text = ""}) => {
+export const SecondaryButton = ({text = "", onClick = () => {}, className}) => {
     return (
-        <button type="button" className={styles.btn_secondary}>
+        <button 
+            type="button" 
+            className={`${styles.btn_secondary} ${className}`}
+            onClick={onClick}
+        >
             {text}
         </button>
     )

@@ -9,16 +9,21 @@
     font-family: inherit;
     font-size: inherit;
     font-weight: bold;
-    padding: 1.3rem 2.5rem;
+    height: 5rem;
+    width: 12.5rem;
 
     &:hover {
-        opacity: .7;
+        opacity: .9;
     }
 }
 
 .btn_secondary {
     background: none; 
     border: none;
-    color: $color-primary;
-    font-weight: 600;
+    color: $color-cool-gray;
+    font-weight: 500;
+
+    &:hover{
+        color: $color-primary;
+    }
 }

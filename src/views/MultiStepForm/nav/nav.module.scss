@@ -8,9 +8,9 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.4rem;
     height: 100%;
-    padding: 5rem 4rem;
+    padding: 4rem 3.4rem;
 }
 
 .step {
@@ -22,7 +22,7 @@
     display: flex;
     font-family: inherit;
     font-size: 1.6rem;
-    gap: 2rem;
+    gap: 1.5rem;
 
     &:hover &_num { 
         background: $color-pastel-blue;
@@ -33,7 +33,7 @@
     &.active &_num {
         background: $color-light-blue;
         border: none;
-        color: $color-black;
+        color: $color-primary;
     }
 
     &_num {
@@ -42,15 +42,14 @@
         display: grid;
         font-size: 1.8rem;
         font-weight: 500;
-        height: 5rem;
+        height: 3.5rem;
         place-items: center;
-        width: 5rem;
+        width: 3.5rem;
     }
 
     &_desc_container {
         display: flex;
         flex-direction: column;
-        gap: .5rem;
         height: 100%;
         justify-content: center;
         text-align: left;
@@ -59,9 +58,12 @@
 
     &_num_name {
         color: $color-pastel-blue;
+        font-size: 1.3rem;
     }
 
     &_name {
-        font-weight: bold;
+        font-weight: 500;
+        font-size: 1.5rem;
+        letter-spacing: .1rem;
     }
 }

@@ -1,1 +1,26 @@
 @import "../../../../assets/sass/variables";
+
+.add_ons {
+    height: inherit;
+    position: relative;
+
+    > p {
+        color: $color-cool-gray;
+        margin-bottom: 3.5rem;
+    }
+
+    h3 {
+        color: $color-primary;
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: .7rem;
+    }
+
+    &_footer{
+        bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+    }
+}

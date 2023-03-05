@@ -3,7 +3,8 @@
 
 *,
 *::before,
-*::after {
+*::after,
+p {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
@@ -39,19 +40,29 @@ ul {
     width: 100%;
 }
 
-.form-check-input:checked,
-.form-check-input{
-    background-color: $color-primary;
-    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27%3e%3ccircle r=%273%27 fill=%27%23fff%27/%3e%3c/svg%3e") !important;
+#time_switch{
+    &.form-check-input:checked,
+    &.form-check-input{
+        background-color: $color-primary;
+        background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%27-4 -4 8 8%27%3e%3ccircle r=%273%27 fill=%27%23fff%27/%3e%3c/svg%3e") !important;
+        background-size: 1.6rem !important;
+    }
+    
+    &.form-check-input{
+        background-position-x: .2rem;
+        background-size: 2.1rem;
+        border: none;
+        padding: 1rem 1.9rem;
+    
+        &:checked{
+            background-position-x: 2rem;
+        }
+    }
 }
 
-.form-switch .form-check-input {
-    background-position-x: .4rem;
-    background-size: 2.1rem;
-    border: none;
-    padding: 1.3rem 2.5rem;
-
-    &:checked{
-        background-position-x: 2.5rem;
-    }
+.form-check-input{
+    padding: .9rem;
+}
+.form-check-input:checked{
+    background-color: $color-secondary;
 }

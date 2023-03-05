@@ -1,0 +1,43 @@
+@import "../../../../../assets/sass/variables";
+
+.add_ons_option{
+    align-items: center;
+    border-radius: .8rem;
+    border: 1px solid $color-cool-gray;
+    cursor: pointer;
+    display: flex;
+    height: 8.5rem;
+    padding: 2.2rem;
+
+    &:hover{
+        border: 1px solid $color-secondary;
+    }
+
+    &.active{
+        background: $color-alabaster;
+        border: 1px solid $color-secondary;
+    }
+
+    &:not(:last-of-type){
+        margin-bottom: 1rem;
+    }
+
+    & > p{
+        color: $color-secondary;
+        margin-left: auto;
+    }
+
+    &_info{
+        margin-left: 1rem;
+        h4{
+            color: $color-primary;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+        p{
+            color: $color-cool-gray;
+            margin-bottom: 0;
+        }
+    }
+}
