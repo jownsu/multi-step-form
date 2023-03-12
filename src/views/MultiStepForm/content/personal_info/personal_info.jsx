@@ -12,11 +12,11 @@ function PersonalInfo() {
             <p>Please provide your name, email address, and phone number.</p>
             <div className={styles.personal_info_group}>
                 <label htmlFor="name">Name</label>
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name" placeholder="e.g. Stephen King" />
             </div>
             <div className={styles.personal_info_group}>
                 <label htmlFor="email">Email Address</label>
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email" placeholder="e.g. stephenking@lorem.com" />
             </div>
             <div className={styles.personal_info_group}>
                 <label htmlFor="phone_number">Phone Number
@@ -30,11 +30,14 @@ function PersonalInfo() {
                     placeholder="e.g +1 234 567 890"
                 />
             </div>
-            <PrimaryButton 
-                onClick={nextStep}
-                text="Next Step" 
-                className={styles.personal_info_next}
-            />
+
+            <div className={styles.personal_info_footer}>
+                <PrimaryButton 
+                    onClick={nextStep}
+                    text="Next Step" 
+                    className={styles.personal_info_next}
+                />
+            </div>
         </div>
     )
 }

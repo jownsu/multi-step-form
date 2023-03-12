@@ -7,6 +7,10 @@
     > p {
         color: $color-cool-gray;
         margin-bottom: 3.5rem;
+        
+        @media only screen and (max-width: $bp-mobile) {
+            margin-bottom: 2.5rem;
+        }
     }
 
     h3 {
@@ -14,6 +18,10 @@
         font-size: 3rem;
         font-weight: 600;
         margin-bottom: .7rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 2.4rem;
+        }
     }
 
     &_footer{
@@ -22,6 +30,17 @@
         justify-content: space-between;
         position: absolute;
         width: 100%;
+        
+        @media only screen and (max-width: $bp-mobile) {
+            background: $color-white;
+            bottom: 0;
+            left: 0;
+            padding: 1.8rem;
+            position: fixed;
+            right: 0;
+            text-align: right;
+            width: 100%;
+        }
     }
 
     &_confirm{

@@ -7,6 +7,10 @@
     > p {
         color: $color-cool-gray;
         margin-bottom: 3.5rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            margin-bottom: 2.2rem;
+        }
     }
 
     h3 {
@@ -14,12 +18,22 @@
         font-size: 3rem;
         font-weight: 600;
         margin-bottom: .7rem;
+        
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 2.4rem;
+        }
     }
 
     .plans_container{
         display: grid;
-        gap: 2rem;
+        gap: 1.8rem;
         grid-template-columns: repeat(3, 1fr);
+
+        @media only screen and (max-width: $bp-mobile) {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+        }
     }
 
     &_next{
@@ -34,5 +48,16 @@
         justify-content: space-between;
         position: absolute;
         width: 100%;
+        
+        @media only screen and (max-width: $bp-mobile) {
+            background: $color-white;
+            bottom: 0;
+            left: 0;
+            padding: 1.8rem;
+            position: fixed;
+            right: 0;
+            text-align: right;
+            width: 100%;
+        }
     }
 }

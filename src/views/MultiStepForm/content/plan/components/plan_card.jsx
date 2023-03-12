@@ -16,9 +16,11 @@ function PlanCard(props) {
             onClick={onCardClick}
         >
             <img src={icon} alt={`icon of ${name}`} />
-            <h4>{name}</h4>
-            <p>{time}</p>
-            {yearly && <p className={styles.plan_card_year}>{yearly}</p>}
+            <div>
+                <h4>{name}</h4>
+                <p>{time}</p>
+                {yearly && <p className={styles.plan_card_year}>{yearly}</p>}
+            </div>
         </div>
     )
 }

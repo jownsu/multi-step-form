@@ -2,20 +2,28 @@
 
 
 .thankyou{
+    align-items: center;
     display: flex;
     flex-direction: column;
     height: inherit;
     justify-content: center;
-    align-items: center;
+    padding-bottom: 3.2rem;
     text-align: center;
     width: 100%;
-    padding-bottom: 3.2rem;
-    
+
+    @media only screen and (max-width: $bp-mobile) {
+        padding: 4.6rem 0;
+    }
 
     img{
         height: 8rem;
-        width: 8rem;
         margin-bottom: 3rem;
+        width: 8rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            height: 6rem;
+            width: 6rem;
+        }
     }
 
     h3{
@@ -23,7 +31,7 @@
     }
     
     p{
-        margin-top: .5rem;
         color: $color-cool-gray;
+        margin-top: .5rem;
     }
 }

@@ -35,9 +35,15 @@ ul {
 ._container {
     align-items: center;
     display: flex;
+    height: 100%;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
+
+    @media only screen and (max-width: $bp-mobile) {
+        align-items: normal;
+        margin-bottom: 7rem;
+    }
 }
 
 #time_switch{

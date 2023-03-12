@@ -6,8 +6,12 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    height: 16rem !important;
-    padding: 2rem 1.8rem 1.5rem 1.8rem;
+    padding: 2rem 1.4rem 1.5rem 1.4rem;
+
+    @media only screen and (max-width: $bp-mobile){
+        flex-direction: row;
+        gap: 1.3rem;
+    }
 
     img{
         border-radius: 50%;
@@ -20,6 +24,11 @@
         color: $color-primary;
         font-size: 1.6rem;
         margin-bottom: .2rem;
+        margin-top: 4.5rem;
+
+        @media only screen and (max-width: $bp-mobile){
+            margin-top: 0;
+        }
     }
 
     p{
@@ -32,8 +41,6 @@
             font-weight: 500;
         }
     }
-
-
 
     &.active{
         background: #F8F9FE;

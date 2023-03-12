@@ -4,31 +4,49 @@
 
     &_main{
         background: $color-alabaster;
+        border-radius: .6rem;
         padding: 2rem 2.3rem;
 
         > div {
-            display: flex;
             align-items: center;
+            display: flex;
             justify-content: space-between;
             padding-top: 1.3rem;
+
+            @media only screen and (max-width: $bp-mobile) {
+                padding-top: 1.1rem;
+            }
 
             p{
                 color: $color-cool-gray;
                 margin-bottom: 0;
+
+                @media only screen and (max-width: $bp-mobile) {
+                    font-size: 1.4rem;
+                }
+
                 &:nth-of-type(2){
                     color: $color-primary;
-                    font-weight: 500;
+                    font-weight: 400;
+                    font-size: 1.5rem;
                 }
             }
 
             &:first-of-type{
                 border-bottom: 2px solid $color-light-gray;
-                padding: 0;
-                padding-bottom: 2.2rem;
+                padding: 0 0 2.2rem 0;
+                
+                @media only screen and (max-width: $bp-mobile) {
+                    padding-bottom: 1rem;
+                }
+
                 p{
                     color: $color-primary;
                     font-weight: 600;
                     margin-bottom: 0;
+                    &:nth-of-type(2){
+                        font-size: 1.6rem;
+                    }
                 }
                 span {
                     color: $color-cool-gray;
@@ -52,12 +70,20 @@
         align-items: center;
         justify-content: space-between;
 
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 1.4rem;
+        }
+
         p{
             color: $color-cool-gray;
             &:nth-of-type(2){
                 color: $color-secondary;
-                font-weight: 600;
                 font-size: 2.1rem;
+                font-weight: 600;
+                
+                @media only screen and (max-width: $bp-mobile) {
+                    font-size: 1.6rem;
+                }
             }
         }
     }

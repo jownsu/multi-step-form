@@ -9,10 +9,17 @@
     margin-top: 3rem;
     padding: 1rem;
 
+    @media only screen and (max-width: $bp-mobile) {
+        margin-top: 2.5rem;
+    }
+
     p{
         color: $color-cool-gray;
         font-weight: 700;
         margin-bottom: 0;
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 1.4rem !important;
+        }
     }
     p.active{
         color: $color-primary;

@@ -9,6 +9,11 @@
     height: 8.5rem;
     padding: 2.2rem;
 
+    @media only screen and (max-width: $bp-mobile){
+        padding: 1.3rem 1.5rem;
+        height: fit-content;
+    }
+
     &:hover{
         border: 1px solid $color-secondary;
     }
@@ -18,13 +23,17 @@
         border: 1px solid $color-secondary;
     }
 
-    &:not(:last-of-type){
+    &:not(:nth-of-type(3)){
         margin-bottom: 1rem;
     }
 
     & > p{
         color: $color-secondary;
         margin-left: auto;
+        
+        @media only screen and (max-width: $bp-mobile){
+            font-size: 1.2rem;
+        }
     }
 
     &_info{
@@ -34,10 +43,16 @@
             font-size: 1.6rem;
             font-weight: 600;
             margin-bottom: 0;
+            @media only screen and (max-width: $bp-mobile){
+                font-size: 1.4rem;
+            }
         }
         p{
             color: $color-cool-gray;
             margin-bottom: 0;
+            @media only screen and (max-width: $bp-mobile){
+                font-size: 1.2rem;
+            }
         }
     }
 }

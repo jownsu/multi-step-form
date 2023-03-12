@@ -3,4 +3,15 @@
 ._container {
     height: 100%;
     padding: 3.7rem 8.2rem 1.5rem 10rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+        background: $color-white;
+        border-radius: .8rem;
+        height: fit-content;
+        margin: 10rem auto 0 auto;
+        padding: 3.3rem 2.5rem;
+        position: relative;
+        width: 91.5%;
+        z-index: 99;
+    }
 }

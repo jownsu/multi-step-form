@@ -11,6 +11,18 @@
     gap: 2.4rem;
     height: 100%;
     padding: 4rem 3.4rem;
+
+    @media only screen and (max-width: $bp-mobile) {
+        background-image: url("../../../assets/images/bg-sidebar-mobile.svg");
+        flex-direction: row;
+        gap: 1.5rem;
+        height: 17.2rem;
+        justify-content: center;
+        padding-bottom: 10rem;
+        border-radius: 0;
+        width: 100%;
+        position: absolute;
+    }
 }
 
 .step {
@@ -45,6 +57,10 @@
         height: 3.5rem;
         place-items: center;
         width: 3.5rem;
+
+        @media only screen and (max-width: $bp-mobile) {
+            font-size: 1.5rem;
+        }
     }
 
     &_desc_container {
@@ -54,6 +70,10 @@
         justify-content: center;
         text-align: left;
         text-transform: uppercase;
+
+        @media only screen and (max-width: $bp-mobile) {
+            display: none;
+        }
     }
 
     &_num_name {

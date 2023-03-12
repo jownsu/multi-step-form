@@ -1,13 +1,31 @@
+@import "../../assets/sass/variables";
+
 .nav {
     flex: 1;
     max-width: 27.5rem;
+    
+    @media only screen and (max-width: $bp-mobile) {
+        max-width: 100%;
+        position: absolute;
+        width: 100%;
+    }
 }
 
 .content {
     flex: 2;
+
+    @media only screen and (max-width: $bp-mobile) {
+        flex: 1;
+    }
 }
 
 ._container {
     display: flex;
     height: 100%;
+
+    @media only screen and (max-width: $bp-mobile) {
+        flex-direction: column;
+        width: 100%;
+        z-index: 50;
+    }
 }

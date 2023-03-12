@@ -6,7 +6,7 @@ function SummaryTable() {
         <div className={styles.summary_table}>
             <div className={styles.summary_table_main}>
                 <div>
-                    <p>Arcade (Yearly)<span>Change</span></p>
+                    <p>Arcade (Monthly)<span>Change</span></p>
                     <p>$90/yr</p>
                 </div>
                 <div className={styles.summary_table_misc}>
