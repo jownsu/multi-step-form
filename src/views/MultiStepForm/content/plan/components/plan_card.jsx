@@ -1,25 +1,36 @@
 import styles from "./plan_card.module.scss";
+import { useFormContext } from "react-hook-form";
 
-function PlanCard(props) {
+function PlanCard({plan}) {
     const { 
+        id,
         icon, 
         name, 
-        time, 
-        active = false, 
+        yearly_desc,
         yearly,
-        onCardClick = () => {} 
-    } = props
+        monthly
+    } = plan;
+
+    const { setValue, watch } = useFormContext();
+
+    const onCardClick = () => {
+        setValue("plan", id);
+    }
 
     return (
         <div 
-            className={`${styles.plan_card} ${active ? styles.active : ""}` }
+            className={`${styles.plan_card} ${(watch("plan") == id) ? styles.active : ""}` }
             onClick={onCardClick}
         >
-            <img src={icon} alt={`icon of ${name}`} />
+            <img src={require(`../../../../../assets/images/${icon}`)} alt={`icon of ${name}`} />
             <div>
                 <h4>{name}</h4>
-                <p>{time}</p>
-                {yearly && <p className={styles.plan_card_year}>{yearly}</p>}
+                {
+                    watch("is_yearly")
+                    ? <p>${yearly}/yr</p>
+                    : <p>${monthly}/mo</p>
+                }
+                {watch("is_yearly") && <p className={styles.plan_card_year}>{yearly_desc}</p>}
             </div>
         </div>
     )

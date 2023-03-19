@@ -7,14 +7,12 @@ import styles from "./summary.module.scss";
 
 function Summary() {
 
-    const [isDone, setIsDone] = useState(false);
-    const { prevStep } = useContext(MultiFormContext);
+    const { prevStep, is_done, setIsDone } = useContext(MultiFormContext);
 
     return (
         <div className={styles.summary}>
-
             {
-                isDone
+                is_done
                     ? <Thankyou onTyClick={() => setIsDone(prevState => !prevState)} />
                     : (
                         <>
@@ -29,16 +27,14 @@ function Summary() {
                                     text="Go Back" 
                                 />
                                 <PrimaryButton 
-                                    text="Confirm" 
+                                    text="Confirm"
+                                    type="submit" 
                                     className={styles.summary_confirm}
-                                    onClick={() => setIsDone(prevState => !prevState)}
                                 />
                             </div>
                         </>
                     )
             }
-
- 
         </div>
     )
 }

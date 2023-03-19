@@ -6,10 +6,6 @@ import styles from "./multi_step_form.module.scss";
 import 'bootstrap/dist/css/bootstrap.min.css';
 function MultiStepForm() {
 
-    function onFormSubmit(e){
-        e.preventDefault();
-    }
-
     return (
         <MultiFormProvider>
             <div className={styles._container}>

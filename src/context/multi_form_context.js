@@ -5,6 +5,7 @@ export const MultiFormContext = createContext();
 const MultiFormProvider = ({children}) => {
 
     const [step, setStep] = useState(1);
+    const [is_done, setIsDone] = useState(false);
 
     const nextStep = () => {
         if(step < 4){
@@ -24,7 +25,9 @@ const MultiFormProvider = ({children}) => {
                     step,
                     setStep,
                     nextStep,
-                    prevStep
+                    prevStep,
+                    is_done,
+                    setIsDone
                 }}
         >
             {children}

@@ -1,10 +1,10 @@
 import React from 'react'
 import styles from "./button.module.scss";
 
-export const PrimaryButton = ({text = "", onClick = () => {}, className}) => {
+export const PrimaryButton = ({text = "", onClick = () => {}, type = "button", className}) => {
     return (
         <button 
-            type="button" 
+            type={type} 
             className={`${styles.btn_primary} ${className}`}
             onClick={onClick}
         >

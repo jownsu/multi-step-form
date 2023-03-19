@@ -1,19 +1,25 @@
-import Form from 'react-bootstrap/Form';
+import Form from "react-bootstrap/Form";
 import styles from "./plan_time.module.scss";
+import { useFormContext } from "react-hook-form";
 
-function PlanTime({isYearly = false, onSwitchClick = () => {}}) {
+function PlanTime() {
+    const { register, watch, setValue } = useFormContext();
+
+    const onSwitchClick = (event) => {
+        setValue("is_yearly", !event.target.checked);
+    }
 
     return (
         <div className={styles.plant_time}>
-            <p className={`${ !isYearly ? styles.active : "" }`}>Monthly</p>
+            <p className={`${ !watch("is_yearly") ? styles.active : "" }`}>Monthly</p>
             <Form.Check 
                 type="switch"
                 id="time_switch"
                 className={styles.switch}
-                checked={isYearly}
                 onChange={onSwitchClick}
+                {...register("is_yearly")}
             />
-            <p className={`${ isYearly ? styles.active : "" }`}>Yearly</p>
+            <p className={`${ watch("is_yearly") ? styles.active : "" }`}>Yearly</p>
         </div>
     )
 }
