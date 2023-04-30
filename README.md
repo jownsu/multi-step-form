@@ -20,7 +20,7 @@ It is my pleasure to present to you a screenshot of my solution to the multi-ste
 ![](./screenshots/3.png)
 ![](./screenshots/4.png)
 ![](./screenshots/5.png)
-![](./screenshots/6.png)
+![](./screenshots/7.png)
 
 ### Links
 
